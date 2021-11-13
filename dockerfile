@@ -14,4 +14,4 @@ RUN echo 'You found it!!' >> /etc/passwd
 
 EXPOSE 5000
 
-ENTRYPOINT [ "python3", "VulnerableServer" ]
+ENTRYPOINT [ "python3", "LocalFileInclusion" ]
