@@ -3,13 +3,27 @@
 An attacker can use Local File Inclusion (LFI) to trick the web application into exposing or running files on the web server.
 
 
-# Quick start guide
+# Quick start guide (Local File Inclusion)
 1. Clone the repo
-2. Build the docker image using `docker build -t lfi .`
-3. Run the docker image using `docker run -dt -p 5000:5000 lfi`
-4. The server is now on [`localhost:5000`](http://localhost:5000)
+2. Go into the `LocalFileInclusion` directory.
+3. Build the docker image using `docker build -t lfi .`
+4. Run the docker image using `docker run -dt -p 5000:5000 lfi`
+5. The server is now on [`localhost:5000`](http://localhost:5000)
+
+# Quick start guide (Remote File Inclusion)
+1. Clone the repo
+2. Go into the `RemoteFileInclusion` directory.
+3. Build the docker image using `docker build -t rfi .`
+4. Run the docker image using `docker run -dt -p 5000:5000 rfi`
+5. The server is now on [`localhost:5000`](http://localhost:5000)
 
 # Defenses
+
+## Using a Proxy
+
+
+## Offloading to a third party Service
+
 
 ## Proper input validation
 

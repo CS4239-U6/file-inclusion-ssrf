@@ -10,8 +10,7 @@ WORKDIR /app
 COPY . .
 RUN python3 -m pip install -r requirements.txt
 RUN mkdir temp
-RUN echo 'You found it!!' >> /etc/passwd
 
 EXPOSE 5000
 
-ENTRYPOINT [ "python3", "LocalFileInclusion" ]
+ENTRYPOINT [ "python3", "__main__.py" ]
