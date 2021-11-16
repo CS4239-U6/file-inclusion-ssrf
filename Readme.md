@@ -19,12 +19,6 @@ An attacker can use Local File Inclusion (LFI) to trick the web application into
 
 # Defenses
 
-## Using a Proxy
-
-
-## Offloading to a third party Service
-
-
 ## Proper input validation
 
 Filter user inputs and make sure that filepath is correct. An example is given below.
